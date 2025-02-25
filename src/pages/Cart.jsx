@@ -3,14 +3,13 @@ import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import TotalCart from '../components/TotalCart'
-import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
 
-  const {cartItems, currency, products, updateQuantity} = useContext(ShopContext)
+  const {cartItems, currency, products, updateQuantity, navigate} = useContext(ShopContext)
 
   const [cartData, setCartData] = useState([])
-  const navigate = useNavigate()
+  
 
   useEffect(()=>{
 
@@ -55,7 +54,7 @@ const Cart = () => {
       })}
     </div>
     <TotalCart />
-    <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
+    <button onClick={()=>navigate('/PlaceOrder')}>PROCEED TO CHECKOUT</button>
     </div>
   )
 }

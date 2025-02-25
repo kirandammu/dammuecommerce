@@ -502,4 +502,66 @@ p span{
     border: 1px solid black;
     margin-left: 50px;
     cursor: pointer;
+    border-radius: 3px;
+}
+.placeorder{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 30PX;
+}
+.del-info{
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    margin: 15px;
+}
+.del-info input{
+    padding: 6px;
+    margin: 6px;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.method{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+.method .payment{
+    border: 1px solid silver;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.payment img{
+    height: 20px;
+}
+.payment .pay{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(38, 244, 31);
+}
+.cartInfo button{
+    padding: 12px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin: 50px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 200px;
+}
+.show .track{
+    border: 1px solid silver;
+    padding: 4px;
+    width: 100px;
+}
+.show .name p{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
 }

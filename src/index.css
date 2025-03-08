@@ -507,7 +507,7 @@ p span{
 .placeorder{
     display: flex;
     justify-content: space-between;
-    margin: 80px 30PX;
+    margin: 80px 30px;
 }
 .del-info{
     display: flex;
@@ -569,12 +569,15 @@ p span{
 /* ---------------mobile----view----------------- */
 
 @media (max-width:500px) {
+    .app{
+        width: 98vw;
+    }
     .list-items{
         display: flex;
         flex-direction: column;
     }
     .hero{
-        width: 100vw;
+        width: 90vw;
     }
     .head p{
         font-weight: 500;
@@ -681,6 +684,108 @@ p span{
     .footer-top p, .footer-top .lists{
         display: none;
     }
+    .collection .filter{
+        width: 120px;
+        padding-top: 10px;
+        position: sticky;
+        top: 0;
+    }
+    .filter-collection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .filter h3, h2, .subcategory h3{
+        font-size: 14px;
+        margin: 4px;
+        padding: 4px;
+    }
+    .about-page{
+        display: flex;
+        flex-direction: column;
+    }
+   .about-img img{
+    width: 90%;
+    padding: 10px;
+   }
+    .about-msg{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .about-msg .msgs{
+        padding: 15px;
+        margin: 10px;
+    }
+    .about-info h2{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .about-info p{
+        padding-top: 6px;
+    }
+    .product-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-items .images{
+        width: 95vw;
+        padding: 5px;
+        margin: 10px;
+        gap: 8px;
+    }
+    .images .mini-img{
+        display: flex;
+        height: 300px;
+        flex-direction: column;
+        justify-content: space-between;
 
-        
+    }
+    .mini-img .mini{
+        width: 60px;
+    }
+    .f-image{
+        height: 300px;
+    }
+    .f-image img{
+        height: 100%;
+    }
+    .placeorder{
+        display: flex;
+        flex-direction: column;
+    }
+    .method{
+        display: flex;
+        flex-direction: column;
+    }
+    .method .payment{
+        width: 200px;
+        padding: 4px;
+        margin: 5px;
+        border-radius: 4px;
+    }
+    .total{
+        padding: 20px;
+        width: 300px;
+    }
+    .del-info{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    margin: 8px;
+    }
+    .del-info .input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .input input{
+        width: 130px;
+    }
+    .del-info input{
+        margin: 3px;
+        padding: 3px;
+    }
+    .show p, .track{
+        display: none;
+    }
 }

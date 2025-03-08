@@ -6,7 +6,7 @@ const ProductItem = ({id,name,image,price}) => {
     const {currency} = useContext(ShopContext)
 
   return (
-    <Link to={`/product/${id}`} >
+    <Link to={`/product/${id}`} onClick={window.scrollTo(0,0)}>
         <div className='image'>
             <img src={image[0]} alt="" />
         
